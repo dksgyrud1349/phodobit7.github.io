@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Membership</title>
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family:sans-serif;
+
+}
+
+body {
+  background-image:#34495e;
+}
+
+.joinForm {
+  position:absolute;
+  width:400px;
+  height:400px;
+  padding: 30px, 20px;
+  background-color:#FFFFFF;
+  text-align:center;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+}
+
+.joinForm h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+.textForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+
+
+.id {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.pw {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.name {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.email {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.nickname {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.cellphoneNo {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+
+.btn {
+  position:relative;
+  left:40%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  width:80%;
+  height:40px;
+  background: red;
+  background-position: left;
+  background-size: 200%;
+  color:white;
+  font-weight: bold;
+  border:none;
+  cursor:pointer;
+  transition: 0.4s;
+  display:inline;
+}
+
+.btn:hover {
+  background-position: right;
+  box-shadow:0 1px 1px rgb(0 0 0 / 10%);
+  background-color:blue;
+}
+</style>
+</head>
+<body>
+<form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this); return false;">
+
+    <h2>회원가입</h2>
+    <div class="textForm">
+        <input name="name" type="text" class="name" placeholder="이름">
+    </div>
+    <div class="textForm">
+        <input name="loginId" type="text" class="id" placeholder="아이디">
+        </input>
+    </div>
+    <div class="textForm">
+        <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+    </div>
+    <div class="textForm">
+        <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
+    </div>
+    <div class="textForm">
+        <input name="email" type="text" class="email" placeholder="이메일">
+    </div>
+    <div class="textForm">
+        <input name="nickname" type="text" class="nickname" placeholder="닉네임">
+    </div>
+    <div class="textForm">
+        <input name="cellphoneNo" type="number" class="cellphoneNo" placeholder="전화번호">
+    </div>
+    <input type="button" value="button" onClick="location.href='file:///C:/Users/dksgy/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/website/website%20main%20page/dorang/public_html/index.html'" class="btn" value="가입하기"/>
+</form>
+</body>
+</html>
